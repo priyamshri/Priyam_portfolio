@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<title>PRIYAM KUMAR</title>
+
+<meta charset="UTF-8">
+<meta name="description" content="I am Priyam Kumar. I am a Full Stack Web Developer and coder. Visit the website to know more about me.">
+<meta name="keywords" content="Priyam, Priyam Kumar, Priyam, Priyam Kumar, full stack web developer, Frontend Web Developer, coder, more">
+<meta name="author" content="Priyam Kumar">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta http-equiv="refresh" content="5"> -->
+
+<link rel="icon" href="./download.png">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+<style>
+    #preloader {
+        background: #000000 url(/gif.gif) no-repeat center center;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        background-size: 12%;
+        top: 0px;
+        /* display: none; */
+    }
+
+    .content {
+        display: none;
+    }
+
+    .loader {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-color: black;
+        position: absolute;
+    }
+
+    .loader>div {
+        background: url(gif.gif) no-repeat center center;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-size: 30%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .loader>div {
+            background-size: 44%;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        .loader>div {
+            background-size: 60%;
+        }
+    }
+</style>
+
+<body>
+    <div class="loader">
+        <div></div>
+    </div>
+
+    <div class="content">
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="a-bar a-white a-card" id="myNavbar">
+                <a href="#home" class="a-bar-item a-button w3-wide">Priyam Kumar</a>
+                <!-- Right-sided navbar links -->
+                <div class="w3-right w3-hide-small">
+                    <a href="#about" class="a-bar-item a-button">ABOUT</a>
+                    <a href="#work" class="a-bar-item a-button"><i class="fa fa-table-cells"></i> WORK</a>
+                    <a href="#skills" class="a-bar-item a-button"><i class="fa fa-user"></i> SKILLS</a>
+                    <a href="#contact" class="a-bar-item a-button"><i class="fa fa-envelope"></i> CONTACT</a>
+                </div>
+                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+                <a href="javascript:void(0)" class="a-bar-item a-button w3-right w3-hide-large w3-hide-medium" onclick="a_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="a-sidebar a-bar-block w3-black a-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="a_close()" class="a-bar-item a-button w3-padding-16 a-medium">Close
+                ×</a>
+            <a href="#about" onclick="a_close()" class="a-bar-item a-button buttonhover">ABOUT</a>
+            <a href="#work" onclick="a_close()" class="a-bar-item a-button buttonhover">WORK</a>
+            <a href="#skills" onclick="a_close()" class="a-bar-item a-button buttonhover"> SKILLS</a>
+            <a href="#contact" onclick="a_close()" class="a-bar-item a-button buttonhover">CONTACT</a>
+        </nav>
+
+        <!-- Header with full-height image -->
+        <!-- <header class="bgimg-1 a-display-container a-grayscale-min" id="home"> -->
+        <header class="bgimg-1 a-display-container" id="home">
+            <div class="a-text-white" style="padding: 197px 0px;
+        margin: 1px auto;
+        text-align: center;">
+                <span class="a-large">Hi, I am</span><br>
+                <span class="a-jumbo w3-hide-small">Priyam Kumar</span><br>
+                <span class="w3-xxlarge w3-hide-large w3-hide-medium">Priyam Kumar</span><br>
+                <span style="color: grey; font-size: 23px;">|&nbsp; FINAL YEAR UNDERGRAD&nbsp; | &nbsp;FULL STACK
+                    DEVELOPER
+                    &nbsp;|</span>
+                <p><a href="#about" class="a-button a-white w3-padding-large a-medium w3-margin-top a-opacity a-hover-opacity-off">Learn
+                        About Me &nbsp;<i class="fa-solid fa-angle-down"></i></a></p>
+            </div>
+            <div class="a-text-grey w3-large" style="padding:24px 48px; position: relative;    top: -141px;    padding: 24px 48px;    margin: 0px auto;    width: 222px;">
+                
+                <a href="https://www.instagram.com/_shr_priyam01?igsh=MXE1cGc4MGx6bHl4aQ==" target="_blank" class="tooltip"><i
+                        class="fa fa-instagram a-hover-opacity"></i><span class="tooltiptext">Instagram</span></a>
+                <a href="https://github.com/priyamshri" target="_blank" class="tooltip"><i
+                        class="fa-brands fa-github a-hover-opacity"></i><span class="tooltiptext">Github</span></a>
+                <a href="https://www.hackerrank.com/profile/kpriyam564" target="_blank" class="tooltip"><i
+                        class="fa-brands fa-hackerrank a-hover-opacity"></i><span
+                        class="tooltiptext">HackerRank</span></a>
+                
+                <a href="https://www.linkedin.com/in/priyam-kumar-107a80228/" target="_blank" class="tooltip"><i
+                        class="fa fa-linkedin a-hover-opacity"></i><span class="tooltiptext">LinkedIn</span></a>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <div class="w3-container" style="padding:128px 16px 51px 16px;" id="about">
+            <h3 class="w3-center">ABOUT ME</h3>
+            <div class="w3-row-padding w3-center" style="margin-top:64px; -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;">
+                Hi, I am Priyam Kumar, a Full Stack Web Developer and coder. I am from India (Bihar). I am currently pursuing B.tech from Haldia Institute of  Technology, Haldia. I have great interest in the field of Web developer and
+                Competitive programming. I don't like to define myself by the work I've done. I define myself by the work I want to do. Skills can be taught, personality is inherent. I prefer to keep learning, continue challenging myself, and do interesting things
+                that matter. Fueled by high energy levels and boundless enthusiasm, I'm easily inspired and more than willing to follow my fascinations wherever they take me. I'm passionate, expressive, multi-talented spirit with a natural ability to
+                entertain and inspire. I'm never satisfied to just come up with ideas. Instead I have an utmost impulsive need to act on them. My abundant energy fuels me in the pursuit of many interests, hobbies, areas of study and artistic endeavors.
+                I'm a fast learner, able to pick up new skills and juggle different projects and roles with ease.
+                <!-- <p><b>FULLNAME :</b> Amarjit Khan</p>
+            <p><b>BIRTH DATE :</b> June 1, 2002</p>
+            <p>PRONOUNS: He, His</p>
+            <p><b>EMAIL :</b> amarjitkhan740@gmail.com</p> -->
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <h3 class="w3-center">Education</h3>
+        <br>
+        <div class="container">
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">September 2020 - June - 2024</h3>
+                            <h1>Bachelor of Technology Degree</h1>
+                            <p>
+                                <b style="font-weight:bold">Haldia Institute of  Technology, Haldia</b><br>
+                                <span><b style="font-weight:bold">Department :</b></span> Electronics and Communication Engineering
+                                <br>
+                                <span><b style="font-weight:bold">Courses :</b></span> Data Structures, Algorithms, Programming Language Digital Electronics<br>
+                                <span><b style="font-weight:bold">SGPA :</b></span>(avg) 8.77 Till 7th Sem
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">April 2018 - April 2019</h3>
+                            <h1>Higher Secondary</h1>
+                            <p>
+                                <b style="font-weight:bold">R B Jalan College</b><br>
+                                <span><b style="font-weight:bold">Board :</b></span> Bihar School Examination Board
+                                <br>
+                                <span><b style="font-weight:bold">Courses :</b></span> Physics, Chemistry, Maths, English<br>
+                                <span><b style="font-weight:bold">Percentage :</b></span> 74.6%
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">April 2016 - April 2017</h3>
+                            <h1>Secondary</h1>
+                            <p>
+                                <b style="font-weight:bold">Mithila High School, Makhnahi</b><br>
+                                <span><b style="font-weight:bold">Board :</b></span> Bihar School Examination Board
+                                <br>
+                                <span><b style="font-weight:bold">Courses :</b></span> Science, Mathematics, Hindi,English, Civics, Geography, Economics, SansKrit<br>
+                                <span><b style="font-weight:bold">Percentage :</b></span> 66.8%
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Promo Section -->
+        <div class="promo">
+            <div class="promo1">
+                <span><a href="#work" class="btn btn-border-1 left-go"><i class="fa fa-th"> </i> My
+                        Works</a></span>
+                <span><a target="_blank" href="https://drive.google.com/file/d/153NPBO1sFsUJzD-Gf5xa832mdNS6hfRp/view?usp=sharing" class="btn btn-border-1 left-go"><i
+                            class="fa-solid fa-file"></i> My
+                        Resume</a></span>
+            </div>
+        </div>
+
+
+        <!-- Work Section -->
+        <div class="w3-container w3-light-grey" style="padding:128px 16px" id="work">
+            <h3 class="w3-center">MY WORK</h3>
+            <p class="w3-center w3-large">Projects and Certificates</p>
+
+            <div class="w3-row-padding" style="margin-top:64px">
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <!-- <img src="C:\Users\AMARJIT\Desktop\project_imges\textutills.png" -->
+                    <img src="./project_images/ecommer.png" style="width:100%; margin-bottom: 18px;" class="a-hover-opacity" alt="Ecommerce">
+                    <p class="hide" style="display: none;">https://github.com/priyamshri/Portfolio</p>
+                </div>
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <!-- <img src="C:\Users\AMARJIT\Desktop\project_imges\textutills.png" -->
+                    <img src="./project_images/BANK2.jpeg" style="width:100%; margin-bottom: 18px;" class="a-hover-opacity" alt="Banking_system">
+                    <p class="hide" style="display: none;">https://github.com/priyamshri/Banking_system</p>
+                </div>
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./project_images/bus.jpeg" style="width:100%; margin-bottom: 18px;" class="a-hover-opacity" alt="Bus_Booking">
+                    <p class="hide" style="display: none;">https://github.com/Amarjit-Khan/Find_My_Train.git</p>
+                </div>
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./project_images/music.png" style="width:100%; margin-bottom: 18px;" class="a-hover-opacity" alt="GetBus - Music  website">
+                    <p class="hide" style="display: none;">
+                        https://github.com/priyamshri/Music_Webiste</p>
+                </div>
+            </div>
+
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./project_images/currency.jpeg" style="width:100%; margin-bottom: 18px;" class="a-hover-opacity" alt="Currency Change">
+                    <p class="hide" style="display: none;">https://github.com/priyamshri/Currency_Change</p>
+                </div>
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./project_images/food.jpeg" style="width:100%; margin-bottom: 18px;" class="a-hover-opacity" alt="Food Website">
+                    <p class="hide" style="display: none;">https://github.com/priyamshri/Foof_Wensite</p>
+                </div>
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./project_images/stop.png" style="width:100%; margin-bottom: 18px;" class="a-hover-opacity" alt="Stopwatch">
+                    <p class="hide" style="display: none;">https://github.com/priyamshri/Stopwatch</p>
+                </div>
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./project_images/port.png" style="width:100%; margin-bottom: 18px;" class="a-hover-opacity" alt="Port Folio Website">
+                    <p class="hide" style="display: none;">https://github.com/priyamshri/PoRt_folio</p>
+                </div>
+
+            </div>
+
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./project_images/Timer.png" style="width:100%; margin-bottom: 18px;" class="a-hover-opacity" alt="Timer Clock">
+                    <p class="hide" style="display: none;">https://github.com/priyamshri/Timer-and-Stopwatch</p>
+                </div>
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./project_images/carimg.png" style="width:100%;
+                    margin-bottom: 18px;" class="a-hover-opacity" alt="Car Game">
+                    <p class="hide" style="display: none;">https://github.com/priyamshri/Car_Animation</p>
+                </div>
+
+            </div>
+
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./cert_images/cer2.jpg" style="width:100%; margin-bottom: 18px; height: 200px;" class="a-hover-opacity" alt=" Coding Ninja">
+                    <p class="hide" style="display: none;"></p>
+                </div>
+
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./cert_images/cer3.png" style="width:100%; margin-bottom: 18px; height: 200px;" class="a-hover-opacity" alt="JAVA -Coursera">
+                    <p class="hide" style="display: none;"></p>
+                </div>
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./cert_images/ppp (1).jpg" style="width:100%; margin-bottom: 18px; height: 200px;" class="a-hover-opacity" alt="IEE Event">
+                    <p class="hide" style="display: none;"></p>
+                </div>
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./cert_images/java2.jpg" style="width:100%;
+                    margin-bottom: 18px; height: 200px;" class="a-hover-opacity" alt="JAVA & SQL - Training">
+                    <p class="hide" style="display: none;"> </p>
+                </div>
+            </div>
+
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./cert_images/prac2.jpg" style="width:100%; margin-bottom: 18px; height: 200px;" class="a-hover-opacity" alt="College Prayukti">
+                    <p class="hide" style="display: none;"> </p>
+                </div>
+                <div class="w3-col l3 m6" onclick="onClick(this)">
+                    <img src="./cert_images/mech2.jpg" style="width:100%; margin-bottom: 18px; height: 200px;" class="a-hover-opacity" alt="Mechnovate">
+                    <p class="hide" style="display: none;"></p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="a-modal a-black" onclick="this.style.display='none'">
+            <span class="a-button w3-xxlarge a-black a-pad w3-display-topright" title="Close Modal Image">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="a-opacity w3-large"></p>
+                <a id="show" class="a-opacity w3-large" href=" " target="_blank" style="text-decoration: dashed;">Click
+                    Here</a>
+            </div>
+        </div>
+
+
+        <div class="w3-container w3-padding-64" id="skills">
+            <div class="w3-row-padding">
+                <div>
+                    <h3>My Skills.</h3>
+                    <p>Things I am good at : </p>
+                </div>
+                <!-- <br> -->
+                <div>
+                    <span class="flex-class">
+                        <div style="margin: 17px 0px 17px 0px;">
+
+                            <div class="a-wide"><i class="fa-brands fa-react w3-margin-right"></i>React Framework</div>
+                            <!-- <br> -->
+                            <div class="a-grey tooltip-black">
+                                <div class="w3-container w3-dark-grey w3-center" style="width:70%"><span
+                                        class="tooltiptext-black">70%</span>70%</div>
+            </div>
+        </div>
+
+        <div style="margin: 17px 0px 17px 0px;">
+
+            <div class="a-wide"><i class="fa-solid fa-cloud w3-margin-right"></i>C/C++</div>
+            <!-- <br> -->
+            <div class="a-grey tooltip-black">
+                <div class="w3-container w3-dark-grey w3-center" style="width:73%"><span class="tooltiptext-black">73%</span>73%</div>
+            </div>
+        </div>
+        </span>
+        <span class="flex-class">
+                        <div style="margin: 17px 0px 17px 0px;">
+
+                            <div class="a-wide"><i class="fa-brands fa-php w3-margin-right">Php</i></div>
+                            <!-- <br> -->
+                            <div class="a-grey tooltip-black">
+                                <div class="w3-container w3-dark-grey w3-center" style="width:40%"><span
+                                        class="tooltiptext-black">40%</span>40%</div>
+    </div>
+    </div>
+
+    <div style="margin: 17px 0px 17px 0px;">
+
+        <div class="a-wide"><i class="fa-solid fa-database w3-margin-right"></i>Databases (MySql)
+        </div>
+        <!-- <br> -->
+        <div class="a-grey tooltip-black">
+            <div class="w3-container w3-dark-grey w3-center" style="width:50%"><span class="tooltiptext-black">50%</span>50%</div>
+        </div>
+    </div>
+    </span>
+    <span class="flex-class">
+                        <div style="margin: 17px 0px 17px 0px;">
+
+                            <div class="a-wide"><i class="fa-brands fa-js w3-margin-right"></i>JavaScript</div>
+                            <!-- <br> -->
+                            <div class="a-grey tooltip-black">
+                                <div class="w3-container w3-dark-grey w3-center" style="width:60%"><span
+                                        class="tooltiptext-black">60%</span>60%</div>
+    </div>
+    </div>
+    <div style="margin: 17px 0px 17px 0px;">
+
+        <div class="a-wide"><i class="fa-solid fa-code w3-margin-right"></i>C, C++ and Java Language
+        </div>
+        <!-- <br> -->
+        <div class="a-grey tooltip-black">
+            <div class="w3-container w3-dark-grey w3-center" style="width:80%"><span class="tooltiptext-black">80%</span>80%</div>
+        </div>
+    </div>
+
+    </span>
+    <span class="flex-class">
+                        <div style="margin: 17px 0px 17px 0px;">
+
+                            <div class="a-wide"><i class="fa-solid fa-terminal w3-margin-right"></i>Git Bash</div>
+                            <!-- <br> -->
+                            <div class="a-grey tooltip-black">
+                                <div class="w3-container w3-dark-grey w3-center" style="width:60%"><span
+                                        class="tooltiptext-black">60%</span>60%</div>
+    </div>
+    </div>
+
+    <div style="margin: 17px 0px 17px 0px;">
+
+        <div class="a-wide"><i class="fa-brands fa-bootstrap w3-margin-right"></i>Bootstrap</div>
+        <!-- <br> -->
+        <div class="a-grey tooltip-black">
+            <div class="w3-container w3-dark-grey w3-center" style="width:75%"><span class="tooltiptext-black">75%</span>75%</div>
+        </div>
+    </div>
+    </span>
+    <span class="flex-class">
+                        <div style="margin: 17px 0px 17px 0px;">
+
+                            <div class="a-wide"><i class="fa fa-html5 w3-margin-right"></i>HTML</div>
+                            <!-- <br> -->
+                            <div class="a-grey tooltip-black">
+                                <div class="w3-container w3-dark-grey w3-center" style="width:90%"><span
+                                        class="tooltiptext-black">90%</span>90%</div>
+    </div>
+    </div>
+
+    <div style="margin: 17px 0px 17px 0px;">
+
+        <div class="a-wide"><i class="fa fa-css3 w3-margin-right"></i>CSS</div>
+        <!-- <br> -->
+        <div class="a-grey tooltip-black">
+            <div class="w3-container w3-dark-grey w3-center" style="width:90%"><span class="tooltiptext-black">90%</span>90%</div>
+        </div>
+    </div>
+    </span>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Lets get in touch. Send me a message:</p>
+        <div style="margin-top:48px">
+            <p><a href="https://www.google.com/maps/place/Darbhanga,+Bihar/@26.1506309,85.9031781,13z/data=!3m1!4b1!4m6!3m5!1s0x39edb835434acdb1:0x70ec31d04822699e!8m2!3d26.1542045!4d85.8918454!16zL20vMDRoYzE2?entry=ttu" style="text-decoration: none;" target="_blank"><i
+                            class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>
+                        Darbhanga, bihar (India)</a></p>
+            <p><a href="tel:8227909654" style="text-decoration: none;" target="_blank"><i
+                            class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 91+8227909654</a></p>
+            <p><a href="mailto:kpriyam564@gmail.com" style="text-decoration: none;" target="_blank"><i
+                            class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email:
+                        kpriyam564@gmail.com</a></p>
+            <br>
+            <form action="https://formsubmit.co/btheory994@gmail.com" method="POST">
+                <p><input class="a-input" type="text" placeholder="Name" required name="name" autocomplete="off">
+                </p>
+                <p><input class="a-input" type="email" placeholder="Email" required name="email" autocomplete="off">
+                </p>
+                <p><input type="hidden" name="_next" value="">
+                </p>
+                <p><input type="hidden" name="_subject" value="New email WOOOO!"></p>
+                <p><input class="a-input" type="text" placeholder="Subject" required name="subject" autocomplete="off">
+                </p>
+                <p><input class="a-input" type="text" placeholder="Message" required name="message" autocomplete="off">
+                </p>
+                <input type="hidden" name="_captcha" value="false">
+
+                <p>
+                    <button class="btn btn-border-1" type="submit" style="font-size: 14px; margin-left: 0%;">
+                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                        </button>
+                </p>
+            </form>
+            <!-- Image of location/map -->
+            <!-- <img src="map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
+            <img src="https://static2.tripoto.com/media/filter/tst/img/373729/TripDocument/1556710317_dsc_7246.jpg" class="w3-image" style="width:100%;margin-top:48px">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="a-button w3-light-grey a-hover-opacity"><i
+                    class="fa fa-arrow-up w3-margin-right"></i>To
+                the top</a>
+        <div class="w3-xlarge w3-section">
+            
+            <a href="https://www.instagram.com/_shr_priyam01?igsh=MXE1cGc4MGx6bHl4aQ==" target="_blank"><i
+                        class="fa fa-instagram a-hover-opacity"></i></a>
+            <a href="https://github.com/priyamshri" target="_blank"><i
+                        class="fa-brands fa-github a-hover-opacity"></i></a>
+            <a href="https://www.hackerrank.com/profile/kpriyam564" target="_blank"><i
+                        class="fa-brands fa-hackerrank a-hover-opacity"></i></a>
+            <!-- <a href="#"><i class="fa fa-twitter a-hover-opacity"></i></a> -->
+            <a href="https://www.linkedin.com/in/priyam-kumar-107a80228/" target="_blank"><i
+                        class="fa fa-linkedin a-hover-opacity"></i></a>
+        </div>
+        <p>Designed by<a href="https://www.linkedin.com/in/priyam-kumar-107a80228/" target="_blank" style="text-decoration: none;" class="a-hover-opacity"> @Priyam</a></p>
+    </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="application/javascript">
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.children[0].src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.children[0].alt;
+            var show = document.getElementById("show");
+            var hide = document.getElementsByClassName("hide");
+            console.log(element.children[1].innerHTML);
+            console.log(element.children[0].src);
+            show.setAttribute("href", element.children[1].innerHTML)
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function a_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function a_close() {
+            mySidebar.style.display = "none";
+        }
+
+        //preloader
+
+        $(window).on('load', function() {
+            $(".loader").fadeOut(1000);
+            $(".content").fadeIn(1000);
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/7f8f916295.js" crossorigin="anonymous"></script>
+    <!-- <script src="index.js" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
